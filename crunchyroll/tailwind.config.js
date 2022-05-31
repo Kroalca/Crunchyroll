@@ -12,7 +12,8 @@ module.exports = {
         neutral: {
           850: '#23252B',
           950: '#141519',
-          250: '#dadada'
+          250: '#dadada',
+          350: '#a0a0a0'
         }
       }
     },
