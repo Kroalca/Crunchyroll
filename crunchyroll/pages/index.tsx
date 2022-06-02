@@ -131,7 +131,7 @@ const Home: NextPage = () => {
                 <svg className="h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-t="dropdown-svg" aria-labelledby="dropdown-svg" aria-hidden="true" role="img"><title id="dropdown-svg">Menú desplegable</title><path d="M7 10h10l-5 5z"></path></svg>
               </div>
               <div className={menuSelected === Menu.News ? 'absolute top-14 bg-neutral-950' : 'absolute top-14 bg-neutral-950 hidden'}>
-                <div className='flex flex-col py-2.5'>
+                <div className='flex flex-col py-2.5 text-sm'>
                   <div className='w-64 px-5 py-3 hover:bg-neutral-850 cursor-pointer'>
                     <a href="">Todas las noticias</a>
                   </div>
@@ -156,12 +156,12 @@ const Home: NextPage = () => {
           <div className='h-full flex items-center px-3.5 hover:bg-neutral-950 cursor-pointer fill-neutral-250 hover:fill-white'>
             <svg className="h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-t="watchlist-svg" aria-labelledby="watchlist-svg" aria-hidden="false" role="img"><title id="watchlist-svg">Mi Lista</title><path d="M17 18.113l-3.256-2.326A2.989 2.989 0 0 0 12 15.228c-.629 0-1.232.194-1.744.559L7 18.113V4h10v14.113zM18 2H6a1 1 0 0 0-1 1v17.056c0 .209.065.412.187.581a.994.994 0 0 0 1.394.233l4.838-3.455a1 1 0 0 1 1.162 0l4.838 3.455A1 1 0 0 0 19 20.056V3a1 1 0 0 0-1-1z"></path></svg>          
           </div>
-          <div className='h-full flex items-center'>
+          <div className='h-full flex items-center relative'>
             <div className={menuSelected === Menu.User ? 'h-full flex items-center px-3.5 bg-neutral-950 cursor-pointer fill-white' : 'h-full flex items-center px-3.5 hover:bg-neutral-950 cursor-pointer fill-neutral-250 hover:fill-white'} onClick={() => handleChangeMenu(Menu.User)}>
               <img src={user.src} alt="" className='w-9 rounded-full'/>
               <svg className="h-6 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-t="dropdown-svg" aria-labelledby="dropdown-svg" aria-hidden="true" role="img"><title id="dropdown-svg">Menú desplegable</title><path d="M7 10h10l-5 5z"></path></svg>
             </div>
-            <div className={menuSelected === Menu.User ? 'absolute top-14 bg-neutral-950 w-96' : 'absolute top-14 bg-neutral-950 w-96 hidden'}>
+            <div className={menuSelected === Menu.User ? 'absolute top-14 right-0 bg-neutral-950 w-96' : 'absolute top-14 bg-neutral-950 w-96 hidden'}>
               <div className='flex flex-col pt-3'>
                 <div className='flex px-4 pt-2 pb-3 border-b-2 border-neutral-850'>
                   <img src={user.src} alt="" className='w-14 rounded-full mr-4'/>
