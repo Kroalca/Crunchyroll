@@ -15,6 +15,12 @@ module.exports = {
           250: '#dadada',
           350: '#a0a0a0'
         }
+      },
+      height: {
+        '400': '100rem'
+      },
+      width: {
+        '164': '42rem'
       }
     },
   },
